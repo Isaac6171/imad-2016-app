@@ -123,7 +123,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/bio.html',function(req, res){
-    res.sendFile(path.join(__dirname,'ui', 'bio.html'));
+    res.sendFile(path.join(__dirname,'ui', 'portfolio.html'));
 });
 
 var counter = 0;
