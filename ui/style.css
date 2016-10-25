@@ -79,11 +79,7 @@ body {
     border-left-color: rgb(239, 239, 239);
     border-left-style: solid;
     border-left-width: 1px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
+
     height: 100px;
     margin: 0 auto 20px;
     margin-top: 0px;
