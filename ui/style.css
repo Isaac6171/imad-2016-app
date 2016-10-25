@@ -5,7 +5,7 @@ body {
 
 	
 	}
-.main {
+.main1 {
 	
 	height:700px;
 	width:1000px;
@@ -16,7 +16,7 @@ body {
 	
 	}
 	
-.sub {
+.sub1 {
 	height:500px;
 	width:500px;
 	background-color:#FFF;
@@ -31,7 +31,7 @@ body {
 	
 	
 }
-._folio {
+._folio1 {
 	height:70px;
 	width:500px;
 	background-color:#3897f0;
@@ -44,7 +44,7 @@ body {
 	
 	
 }
-._txt {
+._txt1 {
 	
 	text-align:center;
 	margin-top:0;
@@ -52,7 +52,7 @@ body {
 	
 	
 	}
-.img_box {
+.img_box1 {
 	height:150px;
 	width:150px;
 	margin-left:200px;
@@ -60,7 +60,7 @@ body {
 	
 	
 	}	
-.pic {
+.pic1 {
 	border-radius: 100px;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -93,7 +93,7 @@ body {
     width: 100px;
 	
 }
-.ent {
+.ent1 {
 	height:50px;
 	width:150px;
 	margin-top:5px;
@@ -101,7 +101,7 @@ body {
 	float:left;
 }
 
-._ent {
+._ent1 {
 	
 	background-color:#3897f0;
 	border-color:#3897f0;
@@ -117,12 +117,12 @@ body {
 
 	
 }
-._ent:hover {
+._ent:hover1 {
 	
 	background-color:#89ce89;
 	border-color:#89ce89;
 }
-.footer{
+.footer1{
 	width:500px;
 	height:100px;
 	background-color:#FFF;
@@ -130,13 +130,13 @@ body {
 
 	padding-top:30px;
 }
-.in{
+.in1{
 	margin-left:200px;
 	
 	
 	
 	}
-._ftxt {
+._ftxt1 {
 
 	
 	color:#000;
