@@ -20,7 +20,7 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 app.get('/ui/photo-01.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'photo_opt.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'photo-01.png'));
 });
 
 
