@@ -175,7 +175,8 @@ body {
 }
 .icon{
     float:left;
-    margin-left:10px;
+    margin-left:5px;
+    margin-top:2px;
 }
 .icon:hover{
 	animation:ease-in;
