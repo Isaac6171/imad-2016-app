@@ -169,10 +169,11 @@ body {
 	
 	
 }
-.icon{
-    float:left;
+#_srch {
     
+    float:left;
 }
+
 .icon:hover{
 	animation:ease-in;
 	
