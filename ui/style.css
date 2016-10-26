@@ -173,7 +173,9 @@ body {
     
     float:left;
 }
-
+.icon{
+    margin-left:10px;
+}
 .icon:hover{
 	animation:ease-in;
 	
