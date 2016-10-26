@@ -169,6 +169,10 @@ body {
 	
 	
 }
+.icon{
+    float:left;
+    
+}
 .icon:hover{
 	animation:ease-in;
 	
