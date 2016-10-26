@@ -15,6 +15,9 @@ app.get('/portfolio.html',function(req, res){
 app.get('/bio.html',function(req, res){
     res.sendFile(path.join(__dirname,'ui', 'bio.html'));
 });
+app.get('/education.html',function(req, res){
+    res.sendFile(path.join(__dirname,'ui', 'education.html'));
+});
 
 
 
