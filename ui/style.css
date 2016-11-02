@@ -241,6 +241,9 @@ body {
 	font-size:36px;
 	margin-left:220px;
 }
+.list{
+    list-style-type:square
+}
 .name{
 	font:icon;
 	font-size:24px;
