@@ -5,7 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var bio = {
+
+var pages = {
+'bio.html' : {
     title: 'bio',
     content:`<h3 class="bio">Bio</h3>
              <div class="name">
@@ -18,8 +20,52 @@ var bio = {
            </ul> 
         </div> `
     
+},
+'contact.html' :{
+    title: 'contact',
+    content:`<h3 class="bio">Contact</h3>
+        <div class="name">
+             <ul class="list">
+           <li> email : isaac4700@gmail.com</li><br>
+            <li>Mob : 9846555982</li><br>
+             <li>Address  : Kuttickal[H],Kanjirapara P.O,Devagiri</li><br>
+            <li>City  : Kottayam</li><br>
+            <li>State : Kerala</li><br>
+            <li>Pin :686555</li>
+            </ul>
+ 
+        </div> `
+},
+'education.html' :{
+    title:'education',
+    content:`<h3 class="bio">Education</h3>
+        <div class="name">
+            <ul class="list">
+            <li>College : St.Joseph college of
+            communication</li><br>
+            <li>University: M.G University</li><br>
+            <li>Degree    : B.A</li><br>
+            <li>Stream    : Multimedia</li><br>
+            </ul>
+        </div> `
+    
+},
+'portfolio.html' :{
+    title:'portfolio',
+    content:`<h3 class="bio">Bio</h3>
+        <div class="name">
+             <p>
+            <ul class="list">
+           
+            <li>Name : Akhil Philip</li><br>
+           <li> D.O.B: 06/11/1991</li><br>
+            <li>Age  : 24</li><br>
+             <li>Sex  : Male</li><br>
+            
+            </ul>
+        </div> `
+}
 };
-
 function createTemplate(data){
 var title = data.title;
 var content = data.content;
@@ -89,23 +135,11 @@ return htmlTemplate;
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/portfolio.html',function(req, res){
-    res.sendFile(path.join(__dirname,'ui', 'portfolio.html'));
-});
-app.get('/bio.html',function(req, res){
-    res.send(createTemplate(bio));
-});
-app.get('/education.html',function(req, res){
-    res.sendFile(path.join(__dirname,'ui', 'education.html'));
-});
-app.get('/resume.html',function(req, res){
-    res.sendFile(path.join(__dirname,'ui', 'resume.html'));
-});
-app.get('/contact.html',function(req, res){
-    res.sendFile(path.join(__dirname,'ui', 'contact.html'));
-});
 
-
+app.get('/:pageName',function(req, res){
+    var pageName = req.params.pageName;
+    res.send(createTemplate(pages[pageName]));
+});
 
 
 app.get('/ui/style.css', function (req, res) {
