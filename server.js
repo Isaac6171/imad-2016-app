@@ -64,7 +64,15 @@ var pages = {
             
             </ul>
         </div> `
-}
+},
+'resume.html' :{
+    title:'resume',
+    content:` <h3 class="r">Resume</h3>
+        <div class="r_img">
+        <img class="resume" src="/ui/C.V-01.png" width="150" height="200" />
+        </div> `
+ 
+    
 };
 function createTemplate(data){
 var title = data.title;
