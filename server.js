@@ -71,12 +71,12 @@ var pages = {
         <div class="r_img">
         <img class="resume" src="/ui/C.V-01.png" width="150" height="200" />
         </div>
-        <a href="https://drive.google.com/open?id=0B0stNv7qCzZOMlJkVnNYQmtJU3c"><input id="counter" class="dwn" type="button" value="Download" /></a>
+        <a href="https://drive.google.com/open?id=0B0stNv7qCzZOMlJkVnNYQmtJU3c"><input id="counter" class="dwn" type="button" value="Download" />
         <div class="stats">
  <table>
  <tr><th>Download Statitics<th><tr>
  <tr><th id="count">Views:0<th><tr>
- </table>
+ </table></a>
  </div>`
 },
 };
