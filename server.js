@@ -71,7 +71,7 @@ var pages = {
         <div class="r_img">
         <img class="resume" src="/ui/C.V-01.png" width="150" height="200" />
         </div>
-        <a href="https://drive.google.com/open?id=0B0stNv7qCzZOMlJkVnNYQmtJU3c"><input class="dwn" type="button" value="Download" />
+        <a href="https://drive.google.com/open?id=0B0stNv7qCzZOMlJkVnNYQmtJU3c"> <button id="counter">Download</button>
        </a>
 
  </div>`
@@ -134,6 +134,12 @@ var htmlTemplate = `
  <div class="content">
   ${content}
  
+ </div>
+ <div class="stats">
+ <table>
+ <tr><th>Download Statitics<th><tr>
+ <tr><th><span id="count">0</span><th><tr>
+ </table>
  </div>
   
 </div>
