@@ -148,6 +148,12 @@ app.get('/:pageName',function(req, res){
     var pageName = req.params.pageName;
     res.send(createTemplate(pages[pageName]));
 });
+var counter = 0;
+app.get('/counter',function(req,res){
+    res.send(counter.toString());
+});
+
+
 
 
 app.get('/ui/style.css', function (req, res) {
