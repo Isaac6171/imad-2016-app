@@ -71,7 +71,7 @@ var pages = {
         <div class="r_img">
         <img class="resume" src="/ui/C.V-01.png" width="150" height="200" />
         </div>
-        <a href="../App/index.html"><input class="dwn" type="button" value="Download" /></a>`
+        <a href="https://drive.google.com/open?id=0B0stNv7qCzZOMlJkVnNYQmtJU3c"><input class="dwn" type="button" value="Download" /></a>`
 },
 };
 function createTemplate(data){
