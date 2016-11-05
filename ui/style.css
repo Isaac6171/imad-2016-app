@@ -350,24 +350,7 @@ body {
 .nav4:hover {
 	background-color:#89ce89;
 }
-.dwn {
-	margin-left:250px;
-}
-.stats{
-	height:100px;
-	width:150px;
-	
-	float:right;
-	margin-right:50px;
-	margin-top:50px;
-	}
-table,th,td{
-	border-color:#3897f0;
-	border:none;
-	background-color:#3897f0;
-	color:#FFF;
-	border-radius:5px;
-}	
+
 #counter{
 	margin-left:250px;	
 		
