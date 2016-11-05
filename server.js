@@ -133,14 +133,15 @@ var htmlTemplate = `
  </div>
  <div class="content">
   ${content}
- 
- </div>
- <div class="stats">
+  <div class="stats">
  <table>
  <tr><th>Download Statitics<th><tr>
  <tr><th><span id="count">0</span><th><tr>
  </table>
  </div>
+ 
+ </div>
+ 
   
 </div>
 </body>
