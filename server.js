@@ -76,6 +76,23 @@ var pages = {
 
  </div>`
 },
+'comment.html' :{
+    title:'comments',
+    content:` <h3 class="r">Comments</h3>
+        <div class="r_img">
+        <div class="cmt">
+        <input type="text" id="comment"  
+        placeholder="comment here !" />
+        </div>
+        <input type="submit" value="Submit"  />
+        <ul>
+        <li>comment1</li>
+        <li>comment2</li>
+        
+        
+        </ul>
+       </div> `
+},
 };
 function createTemplate(data){
 var title = data.title;
