@@ -80,7 +80,7 @@ var pages = {
     title:'comments',
     content:` <h3 class="r">Comments</h3>
         <div class="r_img">
-        <div class="cmt">
+        
         <input type="text" id="comment"  
         placeholder="comment here !" />
        
@@ -90,7 +90,7 @@ var pages = {
         
       
         </ul>
-        </div>
+        
     
        </div> `
 },
