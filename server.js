@@ -11,7 +11,7 @@ var pages = {
     title: 'bio',
     content:`<h3 class="bio">Bio</h3>
              <div class="name">
-            <ul class="list">
+            <ul class="list1">
            <li> Name : Akhil Philip</li><br>
             <li>D.O.B: 06/11/1991</li><br>
             <li> Age  : 24</li><br>
