@@ -145,7 +145,8 @@ var htmlTemplate = `
 </div></a>
 <a href="contact.html"><div class="nav4">Contact
 </div></a>
-  
+<a href="comment.html"><div class="nav5">Comments
+</div></a>  
   
  </div>
  <div class="content">
