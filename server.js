@@ -25,7 +25,7 @@ var pages = {
     title: 'contact',
     content:`<h3 class="bio">Contact</h3>
         <div class="name">
-             <ul class="list">
+             <ul class="list1">
            <li> email : isaac4700@gmail.com</li><br>
             <li>Mob : 9846555982</li><br>
              <li>Address  : Kuttickal[H],Kanjirapara P.O,Devagiri</li><br>
@@ -40,7 +40,7 @@ var pages = {
     title:'education',
     content:`<h3 class="bio">Education</h3>
         <div class="name">
-            <ul class="list">
+            <ul class="list1">
             <li>College : St.Joseph college of
             communication</li><br>
             <li>University: M.G University</li><br>
@@ -55,7 +55,7 @@ var pages = {
     content:`<h3 class="bio">Bio</h3>
         <div class="name">
              <p>
-            <ul class="list">
+            <ul class="list1">
            
             <li>Name : Akhil Philip</li><br>
            <li> D.O.B: 06/11/1991</li><br>
