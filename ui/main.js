@@ -13,10 +13,10 @@ submit.onclick = function(){
                 var list = '';
                 for(var i=0; i< comments.length;i++){
                     list += '<li>' + comments[i] + '</li>';
-                }
+                
                 var ul = document.getElementById('commentlist');
                 ul.innerHTML = list;
-                
+                } 
             }
         }
     
