@@ -167,17 +167,19 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var comments = [];
+app,get('/submit-comment',function(req,res){
+    var comment = req.query.comment;
+    comments.push(comment);
+    res.send(JSON.stringyfy(comments));
+});
+
+
 app.get('/:pageName',function(req, res){
     var pageName = req.params.pageName;
     res.send(createTemplate(pages[pageName]));
 });
 
-var comments = [];
-app,get('/submit-comment/:comment',function(req,res){
-    var comment = req.params.comment;
-    comments.push(comment);
-    res.send(JSON.stringyfy(comments));
-});
 
 
 
