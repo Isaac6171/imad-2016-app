@@ -1,3 +1,4 @@
+
 var commentInput = document.getElementById('comment');
 var comment = commentInput.value;
 var submit = document.getElementById('submit_btn');
