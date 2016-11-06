@@ -84,10 +84,9 @@ var pages = {
         <input type="text" id="comment"  
         placeholder="comment here !" />
         </div>
-        <input type="submit" value="Submit"  />
-        <ul>
-        <li>comment1</li>
-        <li>comment2</li>
+        <input type="submit" value="Submit" id="submit_btn"  />
+        <ul id="commentlist">
+       
         
         
         </ul>
