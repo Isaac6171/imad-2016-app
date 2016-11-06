@@ -1,11 +1,13 @@
-var button = document.getElementById('counter')
-var counter = 0;
-button.onclick = function (){
-	
-	
-	counter = counter+1;
-	var span = document.getElementById('count');
-	span.innerHTML = counter.toString();
-	
-	
+var commentInput = document.getElementById('comment');
+var comment = commentInput.value;
+var submit = document.getElementById('submit_btn');
+submit.onclick = function(){
+    
+var comments = ['c1','c2','c3'] ;
+var list = '';
+for(var i=0; i<comments.length;i++){
+    list += '<li>' + comments[i] + '</li>';
+}
+var ul = document.getElementById('commentlist');
+ul.innerHTML = list;
 };
