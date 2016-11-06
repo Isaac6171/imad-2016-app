@@ -172,12 +172,12 @@ app.get('/:pageName',function(req, res){
     res.send(createTemplate(pages[pageName]));
 });
 
-var counter = 0;
-app.get('/counter',function(req,res){
-	counter = counter+1;
-	res.send(counter.toString());
-	
-	});
+var comments = [];
+app,get('/submit-comment/:comment',function(req,res){
+    var comment = req.params.comment;
+    comments.push(comment);
+    res.send(JSON.stringyfy(comments));
+});
 
 
 
