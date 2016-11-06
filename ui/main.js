@@ -1,6 +1,5 @@
 
-var commentInput = document.getElementById('comment');
-var comment = commentInput.value;
+
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
     var request = new XMLHttpRequest();
@@ -12,7 +11,7 @@ submit.onclick = function(){
                 var comments = request.responseText;
                 comments = JSON.parse(comments);
                 var list = '';
-                for(var i=0; i<comments.length;i++){
+                for(var i=0; i< comments.length;i++){
                     list += '<li>' + comments[i] + '</li>';
                 }
                 var ul = document.getElementById('commentlist');
@@ -28,7 +27,8 @@ submit.onclick = function(){
     
     
     
-    
+var commentInput = document.getElementById('comment');
+var comment = commentInput.value;   
 request.open('GET','http://isaac6171.imad.hasura-app.io/submit-comment?comment='+ comment ,true);
 request.send(null);
     
