@@ -83,13 +83,14 @@ var pages = {
         <div class="cmt">
         <input type="text" id="comment"  
         placeholder="comment here !" />
-        </div>
+       
         <input type="submit" value="Submit" id="submit_btn"  />
         <ul id="commentlist">
        
         
-        
+      
         </ul>
+     </div>
        </div> `
 },
 };
