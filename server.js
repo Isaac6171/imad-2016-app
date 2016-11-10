@@ -86,24 +86,9 @@ var pages = {
 
  </div>`
 },
-'comment.html' :{
-    title:'comments',
-    content:` <h3 class="r">Comments</h3>
-        <div class="r_img">
-        
-        <input type="text" id="comment"  
-        placeholder="comment here !" />
-       
-        <input type="submit" value="Submit" id="submit_btn"  />
-        <ul id="commentlist">
-       
-        
-      
-        </ul>
-        
-    
-       </div> `
-},
+//comments
+
+
 };
 function createTemplate(data){
 var title = data.title;
@@ -202,7 +187,23 @@ app.get('/:pageName',function(req, res){
     res.send(createTemplate(pages[pageName]));
 });
 
-
+app.get('/pages/:pageName',function(req, res){
+  
+    
+    pool.query("SELECT * FROM pages WHERE title = " + req.params.pageName, function (err,result){
+        if(err){
+            res.status(500).send(err.toString());
+        }else {
+            if(result.rows.length === 0){
+                res.status(404).send('Page Not Found');
+            }else {
+                var pageData = result.rows[0];
+                res.send(createTemplate(pageData));
+            }
+        }
+    });
+    res.send(createTemplate(pageData));
+});
 
 
 app.get('/ui/style.css', function (req, res) {
