@@ -86,7 +86,24 @@ var pages = {
 
  </div>`
 },
-//comments
+'comment.html' :{
+    title:'comments',
+    content:` <h3 class="r">Comments</h3>
+        <div class="r_img">
+        
+        <input type="text" id="comment"  
+        placeholder="comment here !" />
+       
+        <input type="submit" value="Submit" id="submit_btn"  />
+        <ul id="commentlist">
+       
+        
+      
+        </ul>
+        
+    
+       </div> `
+},
 
 
 };
